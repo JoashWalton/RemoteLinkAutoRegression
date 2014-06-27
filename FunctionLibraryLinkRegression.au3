@@ -16,7 +16,7 @@ Global $windowtitleinuse = "Remote Link"
 Global $aOperatorUsernames[604]
 Global $aUserLastNames[1000]
 Global $aUserFirstNames[1000]
-Global $LogFilePath = ""
+Global $LogFile = "C:\Users\Administrator\Documents\GitHub\RemoteLinkAutoRegression\TestLogFile.txt"
 Global $MessageToWrite = ""
 Global $FilePath = "P:\JW\Auto It Scripts\Remote Link\Link Automatic Regression\Remote Link Automatic Regression\TextFiles"
 
@@ -161,7 +161,7 @@ Func LogFileWrite($LogFile,$MessageToWrite) ;Function to write to specified log 
 	Local $message = $MessageToWrite
 	Local $iFlag = 0
 
-	Local $log = FileOpen(@ScriptDir & $location, 1)
+	Local $log = FileOpen($location, 1)
 	Local $result = _FileWriteLog($log, $message, $iFlag = -1)
 
 	If $result = 0 Then

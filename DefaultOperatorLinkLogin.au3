@@ -10,6 +10,7 @@
 
 #include <File.au3>
 #include <FileConstants.au3>
+#include "C:\Users\Administrator\Documents\GitHub\RemoteLinkAutoRegression\FunctionLibraryLinkRegression.au3"
 
 Local $windowtitleinuse = "Remote Link"
 Local $operatorusername = "new"
